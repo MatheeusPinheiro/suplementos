@@ -28,16 +28,21 @@ header{
     align-items: center;
 }
 
-
-.header .logo a{
-    max-width: 60px;
-    text-shadow: 0 0 10px #12be21;;
-    text-decoration: none;
-    font-size: 45px;
-    color: #fff;
-    /* padding: 5px; */
+.logo{
+    background-color: #fff;
+    border-radius: 50%;
 }
 
+.header .logo a{
+    
+   text-decoration: none;
+}
+
+
+.header .logo a img{
+    max-width: 80px;
+    box-sizing: 0px 0px 10px #fff;
+}
 
 
 .header nav ul{
@@ -176,6 +181,138 @@ header{
 
 
 
+/* beneficios*/
+
+.beneficios{
+    margin: 30px 0;
+}
+
+
+.beneficios-area{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+
+.beneficios-area .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.beneficios-area .box h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.beneficios .box p{
+    margin: 5px 0; 
+}
+
+.beneficios .box .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.beneficios .box .btn a{
+    width: 160px;
+    padding: 8px 20px;
+    background-color: #12be21;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+.email{
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px 0;
+}
+
+.email-area{
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-area .grandao{
+    font-size: 42px;
+}
+
+.email-area h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.email-area p{
+    max-width: 800px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+.email-area .box{
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 540px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.email-area .box .icon{
+    height: inherit;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-area .box .icon i{
+    color: #1e1e1e;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.email-area input{
+    flex: 1;
+    outline: none;
+    border: 0;
+    height: inherit;
+    padding-left: 30px;
+    border-radius: 8px;
+}
+
+
+.email-area span{
+    font-size: 13px;
+    margin: 10px auto 0 auto;
+}
+
+
+
+
+
 
 
 
@@ -208,9 +345,19 @@ header{
     margin-bottom: 20px;
  }
  
-
- .logo a{
+ .logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
+ }
+
+ 
+
+ .logo a img{
+    transform: scale(.7);
  }
 
  .infos .infos-area {
@@ -233,11 +380,14 @@ header{
     font-size: 22px;
 
  }
- .infos .infos-area .left h2,
- .infos .infos-area .left p{
+ .infos .infos-area .left h2{
     text-align: center;
  }
-
+ 
+ .infos .infos-area .left p{
+    margin: 10px;
+    text-align: justify;
+ }
  .infos .infos-area .left h2 span {
     font-size: 24px;
     text-align: center;
@@ -280,4 +430,39 @@ header{
  .header .logo a {
     font-size: 31px;
  }
+
+ .beneficios-area {
+    width: calc(100vw - 5px);
+    flex-wrap: wrap;
+ }
+
+ .beneficios .box .btn a {
+    margin-right: 10px;
+ }
+
+ .beneficios .box p {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.beneficios .box iframe{
+    width:100vw;
+}
+
+.email-area h3 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.email-area .box {
+    width: calc(100vw - 10px);
+}
+
+.email-area p {
+    width: calc(100vw - 10px);
+}
+
+
 }

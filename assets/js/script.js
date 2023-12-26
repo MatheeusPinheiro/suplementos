@@ -28,3 +28,14 @@ menu_mobile.addEventListener('click', ()=>{
     let menus = document.querySelector('.header nav ul')
     menus.classList.toggle('abrir')
 })
+
+
+
+/* email*/
+
+
+let email = document.querySelector('#email')
+
+email.addEventListener('input', (e) => {
+    console.log(e.target.value)
+})

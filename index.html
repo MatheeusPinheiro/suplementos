@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empresa</title>
-  <link rel="stylesheet" href="assets/css/styles.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/imagens/logo.png"/>
+          </a>
+        </div>
 
-  <header>
-    <div class="header">
-    <div class="logo">
-      <a href="#">
-        LOGO
-      </a>
-    </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          
-        </ul>
-
-       
-      </nav>
-
-      <div class="menu-hamburguer">
-        <i class="bi bi-list"></i>
+        <div class="menu-hamburguer">
+          <i class="bi bi-list"></i>
+        </div>
       </div>
-     
-    </div>
+    </header>
 
-  </header>
-
-  <main>
-    <section class="infos">
+    <main>
+      <section class="infos">
         <div class="infos-area">
           <div class="left">
             <h2>Melhores Suplementos de <span>Manaus</span></h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Quibusdam magni deleniti pariatur a nemo reiciendis. Quod facilis unde dolore sunt 
-              voluptas veniam, eos consequatur perspiciatis et repellendus voluptatum odio eius!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              magni deleniti pariatur a nemo reiciendis. Quod facilis unde
+              dolore sunt voluptas veniam, eos consequatur perspiciatis et
+              repellendus voluptatum odio eius!
             </p>
             <a href="#">Ver todos os produtos</a>
           </div>
           <div class="right">
-              <img class="big-img" src="assets/imagens/a.png" alt="">
+            <img class="big-img" src="assets/imagens/a.png" alt="" />
           </div>
         </div>
 
         <ul class="thumb">
-          <li><img src="assets/imagens/a.png" onclick="trocarImg('assets/imagens/a.png'); trocarCor('#12be21')"></li>
-          <li><img src="assets/imagens/b.png" onclick="trocarImg('assets/imagens/b.png'); trocarCor('#f04b0a')"></li>
-          <li><img src="assets/imagens/c.png" onclick="trocarImg('assets/imagens/c.png'); trocarCor('#600197')"></li>
+          <li>
+            <img
+              src="assets/imagens/a.png"
+              onclick="trocarImg('assets/imagens/a.png'); trocarCor('#12be21')"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/imagens/b.png"
+              onclick="trocarImg('assets/imagens/b.png'); trocarCor('#f04b0a')"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/imagens/c.png"
+              onclick="trocarImg('assets/imagens/c.png'); trocarCor('#600197')"
+            />
+          </li>
         </ul>
-    </section>
-  </main>
-  
+      </section>
 
-  <script src="assets/js/script.js"></script>
-</body>
+      <section class="beneficios">
+        <div class="beneficios-area">
+          <div class="box bg">
+            <h1>Quais os benficíos de tomar Suprementos</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium ipsam consectetur obcaecati, accusantium quia quis?
+              Minus, cumque porro magni repellendus expedita accusamus quae
+              obcaecati qui distinctio voluptate earum laborum magnam!
+            </p>
+            <div class="btn">
+              <a href="#">Saiba mais</a>
+            </div>
+          </div>
+          <div class="box">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bAJRyrQ36H4?si=WuRGjxvpnzY2TqYi"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="email">
+          <div class="email-area">
+              <i class="bi bi-telegram grandao"></i>
+              <h3>Receba novidades diretamente no seu e-mail.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, 
+                harum voluptatibus sapiente officia tempore, tenetur eum necessitatibus eaque 
+                beatae architecto non eveniet! Labore atque tenetur similique dolorem aliquid unde doloremque.
+              </p>
+              <form>
+                <div class="box">
+                  <input id="email" type="text" placeholder="Digite eu email..."/>
+                  <div class="icon">
+                    <i class="bi bi-telegram"></i>
+                  </div>
+                </div>
+                
+              </form>
+              <span>Não se preocupe, também odiamos spam.</span>
+          </div>
+      </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
