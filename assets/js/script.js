@@ -12,10 +12,12 @@ const trocarCor = (color)=>{
     let right = document.querySelector('.right')
     let manaus = document.querySelector('.left h2 span')
     let btn = document.querySelector('.left a')
+    let musc = document.querySelector('.musculacao-area .img-box')
 
     right.style.background = color
     manaus.style.color = color
     btn.style.background = color
+    musc.style.background = color
 }
 
 

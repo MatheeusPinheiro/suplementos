@@ -158,11 +158,12 @@ header{
 
 .thumb{
     position: absolute;
-    left: 40%;
+    left: 50%;
     bottom: 20px;
     display: flex;
     transition: .5s;
     z-index: 200;
+    transform: translateX(-50%);
 }
 
 .thumb li{
@@ -310,6 +311,83 @@ header{
 }
 
 
+/*Musculação */
+
+
+.musculacao-area{
+    max-width: 1140px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.musculacao-area .box{
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px 0;
+
+}
+
+.musculacao-area .box h3{
+    font-size: 28px;
+    text-align: center;
+}
+
+.musculacao-area .box a {
+    width: 160px;
+    padding: 8px 20px;
+    background-color: rgb(18, 190, 33);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.musculacao-area .img-box{
+    width: 550px;
+    height: 300px;
+    padding: 10px 0;
+    background-color: #06ec1aee;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+
+.musculacao-area .img-box .atras{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    /* background-color: #000; */
+    background-image: url('../imagens/malhacao.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*cookie */
 
@@ -386,7 +464,7 @@ header{
     background-color: #000;
     left: 0;
     right: 0;
-    margin-top: 50px;
+    margin-top: 37px;
     z-index: 40000;
     transition: ease 0.5s;
  }
@@ -460,7 +538,7 @@ header{
  }
 
  .thumb{
-    left: 10%;
+    left: 50%;
     bottom: -20px;
  }
 
@@ -492,7 +570,7 @@ header{
  }
 
  .beneficios .box p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     margin: 10px;
 }
@@ -508,11 +586,11 @@ header{
 }
 
 .email-area .box {
-    width: calc(100vw - 10px);
+    width: calc(100vw - 20px);
 }
 
 .email-area p {
-    width: calc(100vw - 10px);
+    width: calc(100vw - 20px);
 }
 
 .cookies-msg{
@@ -528,6 +606,32 @@ header{
 .cookies-msg .cookies-txt p {
     font-size: 12px;
 }
+
+
+.musculacao-area {
+    flex-wrap: wrap;
+}
+
+.musculacao-area .box{
+    padding: 20px 0;
+}
+
+.musculacao-area .box p{
+    width: calc(100vw - 20px);
+    font-size: 14px;
+    font-weight: 600;
+}
+.musculacao-area .box a{
+    margin-right: 10px;
+}
+
+.musculacao-area .img-box {
+    border-radius: 0;
+}
 }
 
 
+footer{
+    height: 300px;
+    background-color: #000;
+}
