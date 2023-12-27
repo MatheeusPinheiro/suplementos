@@ -443,6 +443,94 @@ header{
 
 
 
+footer{
+    padding: 30px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-area{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-area .developer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.footer-area .developer span{
+    margin-left: 20px;
+}
+
+.footer-area .ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #12be21;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-area .ball .ball2{
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.4);
+}
+
+.footer-area .midias{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-area .midias ul{
+    display: flex;
+}
+
+.footer-area .midias ul li{
+    list-style: none;
+}
+
+.footer-area .midias ul li a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right:10px;
+}
+
+
+.footer-area .midias ul li a i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.whatsapp{
+    position: fixed;
+    right: 2rem;
+    z-index: 1;
+    bottom: 0;
+    padding: 10px;
+    transition: all ease-in .5s;
+    border-radius: 50%;
+}
+
+
+.whatsapp a i{
+    font-size: 32px;
+    color: #12be21;
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -628,63 +716,20 @@ header{
 .musculacao-area .img-box {
     border-radius: 0;
 }
-}
-
-
-footer{
-    padding: 30px 0;
-    background-color: #000;
-    color: #fff;
-}
 
 .footer-area{
-    max-width: 1140px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.footer-area .developer{
-    display: flex;
-    align-items: center;
+
+.footer-area .midias{
     justify-content: center;
-}
-.footer-area .developer span{
-    margin-left: 20px;
-}
-
-.footer-area .ball{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #12be21;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-}
-.footer-area .ball .ball2{
-    width: inherit;
-    height: inherit;
-    background-color: #000;
-    border-radius: 50%;
-    transform: scale(.4);
+    margin-bottom: 10px;
 }
 
-
-.whatsapp{
-    position: fixed;
-    right: 2rem;
-    z-index: 1;
-    bottom: 0;
-    padding: 10px;
-    transition: all ease-in .5s;
-    border-radius: 50%;
+.footer-area .developer span {
+    margin-left: 0;
+}
 }
 
-
-.whatsapp a i{
-    font-size: 32px;
-    color: #12be21;
-    cursor: pointer;
-}
