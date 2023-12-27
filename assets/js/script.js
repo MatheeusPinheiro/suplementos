@@ -41,3 +41,21 @@ let email = document.querySelector('#email')
 email.addEventListener('input', (e) => {
     console.log(e.target.value)
 })
+
+
+
+
+
+let menus = document.querySelectorAll('.header nav ul li')
+
+
+menus.forEach(item=>{
+
+    item.addEventListener('click', ()=>{
+        menus.forEach(otherItem =>{
+            otherItem.classList.remove('active')
+        })
+
+        item.classList.add('active')
+    })
+})

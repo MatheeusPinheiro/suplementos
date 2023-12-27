@@ -55,8 +55,15 @@ header{
 
 .header nav ul li{
     list-style: none;
+    padding: 3px 20px;
+    margin-left: 40px;
+    transition: all ease .5s;
 }
 
+.header nav ul li.active{
+   background-color: #12be21;
+   border-radius: 8px;
+}
 
 .header nav ul li a{
     display: block;
@@ -64,7 +71,7 @@ header{
     text-transform: uppercase;
     font-weight: 600;
     text-decoration:none;
-    margin-left: 40px;
+   
 }
 
 .header .menu-hamburguer{
